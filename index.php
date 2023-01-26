@@ -34,5 +34,10 @@ Second-number
 
     </form>
 
+    <title>PHP Basic Calculator</title>
+</head>
+<body>
+    
+
 </body>
 </html>
