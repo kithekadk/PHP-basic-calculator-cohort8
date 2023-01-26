@@ -15,13 +15,13 @@ class myCalculator{
 
     public function my_calculator() {
         if($this->operator=="+"){
-		    $results = $this->first_num + $this->second_num;
+		    $this->results = $this->first_num + $this->second_num;
         }elseif($this->operator=="-"){
-		    $results = $this->first_num - $this->second_num;
+		    $this->results = $this->first_num - $this->second_num;
         }elseif($this->operator=="*"){
-		    $results = $this->first_num * $this->second_num;
+		    $this->results = $this->first_num * $this->second_num;
         }elseif($this->operator=="/"){
-		    $results = $this->first_num / $this->second_num;
+		    $this->results = $this->first_num / $this->second_num;
         }
     }
 
