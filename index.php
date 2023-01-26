@@ -18,7 +18,7 @@
 <div class="main-container">
     <h1>SIMPLE CALCULATOR</h1>
 
-    <form action="/assets/classes/classes.php" method="POST">
+    <form action="index.php" method="POST">
         <label for="Num1">
         First number  
         <input type="number" name="Num1"  placeholder="Input your integer here">
@@ -38,11 +38,11 @@
             <input type="submit" name="operator" value="/">
         </div>
 
-        <label for="Result">
-        Result<input type="number" name="Result" placeholder="Result to be displayed here" >
-        </label>
+        
     </form>
-
+        <label for="Result">
+             Result<input type="number" name="Result" placeholder="Result to be displayed here" >
+        </label>
 </div>
 
 
