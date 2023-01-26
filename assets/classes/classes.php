@@ -13,11 +13,12 @@ class myCalculator{
     }
 
     public function my_calculator() {
+        global $results;
         if($operator=="+"){
 		    $results = $first_num+$second_num;
         }elseif($operator=="-"){
 		    $results = $first_num-$second_num;
-        }elseif($operator=="x"){
+        }elseif($operator=="*"){
 		    $results = $first_num*$second_num;
         }elseif($operator=="/"){
 		    $results = $first_num/$second_num;
