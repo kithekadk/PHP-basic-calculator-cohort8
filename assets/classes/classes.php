@@ -13,28 +13,29 @@ class myCalculator{
     }
 
     public function my_calculator() {
-        if($operator=="+"){
-		    $results = $first_num+$second_num;
-	    else if($operator=="-")
-		    $results = $first_num-$second_num;
-	    else if($operator=="x")
-		    $results = $first_num*$second_num;
-	    else if($operator=="/")
-		    $results = $first_num/$second_num;
+        $results;
+        if($this->operator=="+"){
+		    $results = $this->first_num + $this->second_num;
+        }elseif($this->operator=="-"){
+		    $results = $this->first_num - $this->second_num;
+        }elseif($this->operator=="*"){
+		    $results = $this->first_num * $this->second_num;
+        }elseif($this->operator=="/"){
+		    $results = $this->first_num / $this->second_num;
         }
     }
 
     public function displayResults() {
-        return $results;
+        echo $results;
     }
 }
 
 
 if ( isset($_POST['Num1']) && isset($_POST['Num2'])) {
-    if(!empty($_POST['Num1']) $$ !empty($_POST['Num2'])){
-        $theCalculation = new myCalculator($_POST["Num1"], $_POST["Num2"]), $_POST['operator'];
+    if(!empty($_POST['Num1']) && !empty($_POST['Num2'])){
+        $theCalculation = new myCalculator($_POST["Num1"], $_POST["Num2"], $_POST['operator']);
         $theCalculation->my_calculator();
-        $theCalculation->displayBill();
+        $theCalculation->displayResults();
     }
 }else{
     echo "Please fill in both the first number and the second number";
