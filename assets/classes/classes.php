@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 class MyCalculator
 {
     private $first_num;
@@ -23,9 +24,14 @@ class MyCalculator
             public function divide() {
                 return $this->first_num / $this->second_num;
                     }
-}
-
+=======
 ?>
+
+
+
+   
+
+  
 
 
 
