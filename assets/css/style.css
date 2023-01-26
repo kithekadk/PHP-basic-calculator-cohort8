@@ -69,7 +69,7 @@ input[type='number'] {
 	gap:1vw;
 }
 
-button {
+input[type='submit'] {
 	font-size: 20px;
 	color: white;
 	background: rgb(77, 175, 81);
