@@ -16,7 +16,7 @@ body {
 .main-container{
 	background: grey;
 	border-radius: 14px;
-	height: 50vh;
+	min-height: 20vw;
 	width: 60%;
 	margin:10vh auto; 
 	background: white;
@@ -89,6 +89,21 @@ input[type='submit'] {
 	.main-container{
 		width: 90%;
 	}
+
+}
+
+
+.success,.fail{
+	text-align: center;
+	padding:20px;
+}
+.success{
+	color:green;
+
+}
+
+.result{
+	color:red;
 
 }
 
