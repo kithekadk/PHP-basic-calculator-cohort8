@@ -18,7 +18,7 @@
 <div class="main-container">
     <h1>SIMPLE CALCULATOR</h1>
 
-    <form action="post" method="http://locahost:8000/">
+    <form action="/assets/classes/classes.php" method="POST">
         <label for="Num1">
         First number  
         <input type="number" name="Num1"  placeholder="Input your integer here">
