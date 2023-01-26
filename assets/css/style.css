@@ -1,10 +1,112 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-shadow: border-box; 
+	box-sizing: border-box;
+	font-family: monospace;
 }
 
 
 body {
+	background: rgb(39,39,39,0.9);
 	
 }
+
+
+
+.main-container{
+	background: grey;
+	border-radius: 14px;
+	height: 50vh;
+	width: 60%;
+	margin:10vh auto; 
+	background: white;
+}
+
+.main-container > h1 {	
+	padding:30px;
+	color:rgb(77, 175, 81);
+	text-align: center;
+	font-family: monospace;
+}
+
+
+.main-container > form {
+	padding:20px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap:2vh;
+
+}
+
+label {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding:10px;
+	align-items: center;
+	width: 90%;
+	font-size: 20px;
+}
+
+
+input[type='number'] {
+	color:black;
+	background: rgb(39,39,39,0.1);
+	border-radius: 4px;
+	padding:14px;
+	width: 75%;
+	border:none;
+}
+
+.buttons {
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap:1vw;
+}
+
+button {
+	font-size: 20px;
+	color: white;
+	background: rgb(77, 175, 81);
+	border-radius: 4px;
+	padding:14px;
+	width: 70%;
+	border:none;
+}
+
+
+/*Tablet screens*/
+@media screen and (max-width: 1600px){
+	body{
+		/*background: cyan;*/
+	}
+
+	.main-container{
+		width: 90%;
+	}
+
+}
+
+
+/*Phone screens*/
+@media screen and (max-width: 600px){
+	body{
+		background: white;
+	}
+
+	.main-container{
+		width: 99%;
+		margin:0 auto;
+		background:white;
+	}
+	label,.buttons {
+		width: 100%;
+	}
+
+}
+
