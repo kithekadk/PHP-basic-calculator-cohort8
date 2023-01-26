@@ -26,7 +26,7 @@ class myCalculator{
     }
 
     public function displayResults(){
-        echo $this->results;
+        return $this->results;
     }
 
 }
