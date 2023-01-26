@@ -27,31 +27,31 @@
 
 if ( isset($_POST['submit']) ) {
         
-    $val1 = $_POST['first_num'];
-    $val2 = $_POST['second_num'];
+    $num = $_POST['first_num'];
+    $num = $_POST['second_num'];
 
-    $opt = $_POST['results'];
+    $num= $_POST['results'];
 
-    $result = my_calculator($first_num, $second_num, $results);
+    $num = my_calculator($first_num, $second_num, $results);
 }
 
 function my_calculator($first_num, $second_num, $results) {
     
     switch($results) {            
         case '+':
-            $value = $first_num + $second_num;
+            $results = $first_num + $second_num;
             break;
         case '-':
-            $value = $first_num - $second_num;
+            $results = $first_num - $second_num;
             break;
         case '*':
-            $value = $first_num * $second_num;
+            $results = $first_num * $second_num;
             break;
         case '/':
-            $value = $first_num / $second_num;
+            $results = $first_num / $second_num;
             break;       
     }
-    return $value;
+    return $results;
 }
 ?>
 
