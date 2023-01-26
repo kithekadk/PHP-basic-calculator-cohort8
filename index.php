@@ -1,4 +1,4 @@
-<?php include "/assets/classes/classes.php";?>
+<?php include "assets/classes/classes.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

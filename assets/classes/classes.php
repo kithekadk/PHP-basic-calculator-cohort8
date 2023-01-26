@@ -15,11 +15,11 @@ class myCalculator{
     public function my_calculator() {
         if($operator=="+"){
 		    $results = $first_num+$second_num;
-	    else if($operator=="-")
+        }elseif($operator=="-"){
 		    $results = $first_num-$second_num;
-	    else if($operator=="x")
+        }elseif($operator=="x"){
 		    $results = $first_num*$second_num;
-	    else if($operator=="/")
+        }elseif($operator=="/"){
 		    $results = $first_num/$second_num;
         }
     }
@@ -31,8 +31,8 @@ class myCalculator{
 
 
 if ( isset($_POST['Num1']) && isset($_POST['Num2'])) {
-    if(!empty($_POST['Num1']) $$ !empty($_POST['Num2'])){
-        $theCalculation = new myCalculator($_POST["Num1"], $_POST["Num2"]), $_POST['operator'];
+    if(!empty($_POST['Num1']) && !empty($_POST['Num2'])){
+        $theCalculation = new myCalculator($_POST["Num1"], $_POST["Num2"], $_POST['operator']);
         $theCalculation->my_calculator();
         $theCalculation->displayResults();
     }
