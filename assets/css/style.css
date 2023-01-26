@@ -16,7 +16,7 @@ body {
 .main-container{
 	background: grey;
 	border-radius: 14px;
-	height: 50vw;
+	min-height: 20vw;
 	width: 60%;
 	margin:10vh auto; 
 	background: white;
