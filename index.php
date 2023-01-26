@@ -1,4 +1,7 @@
-<?php include "assets/classes/classes.php";?>
+<?php 
+$fail="";
+include "assets/classes/classes.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,12 +25,12 @@
     <form action="index.php" method="POST">
         <label for="Num1">
         First number  
-        <input type="number" name="Num1"  placeholder="Input your integer here">
+        <input type="number" name="Num1"  placeholder="Input your integer here" required >
         </label>
 
         <label for="num2">
         Second number
-        <input type="number" name="Num2"  placeholder="Input your integer here">
+        <input type="number" name="Num2"  placeholder="Input your integer here" required >
 
         </label>
 
@@ -37,10 +40,13 @@
             <input type="submit" name="operator" value="*">
             <input type="submit" name="operator" value="/">
         </div>
-        <label for="Result">
-             Result <?php echo $theCalculation->displayResults(); ?>
-        </label>
         
+        <h1 class="success">
+             Result : <?php echo $theCalculation->displayResults(); ?>
+        </h1>
+        <h1 class="fail">
+             <?php echo $fail;?>
+        </h1>
     </form>
 
 </div>

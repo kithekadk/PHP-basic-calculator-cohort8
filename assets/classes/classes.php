@@ -38,7 +38,7 @@ if ( isset($_POST['Num1']) && isset($_POST['Num2'])) {
         $theCalculation->my_calculator();
     }
 }else{
-    echo "Please fill in both the first number and the second number";
+    $fail="Please fill in both the first number and the second number";
 }
 
 ?>
