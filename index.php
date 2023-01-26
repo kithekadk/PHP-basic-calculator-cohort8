@@ -1,6 +1,10 @@
 <?php 
-$fail="";
-include "assets/classes/classes.php";
+$result="";
+
+if ($_SERVER ['REQUEST_METHOD'] == 'POST'){
+    include "assets/classes/classes.php";
+    $result='Result : '.$theCalculation->displayResults();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,10 +43,7 @@ include "assets/classes/classes.php";
         </div>
         
         <h1 class="success">
-             Result : <?php echo $theCalculation->displayResults(); ?>
-        </h1>
-        <h1 class="fail">
-             <?php echo $fail;?>
+             <?php echo $result; ?>
         </h1>
     </form>
 
