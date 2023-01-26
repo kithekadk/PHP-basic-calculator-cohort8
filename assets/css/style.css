@@ -31,7 +31,6 @@ body {
 
 
 .main-container > form {
-
 	padding:20px;
 	height: 100%;
 	width: 100%;
@@ -58,12 +57,12 @@ input[type='number'] {
 	background: rgb(39,39,39,0.1);
 	border-radius: 4px;
 	padding:14px;
-	width: 70%;
+	width: 75%;
 	border:none;
 }
 
 .buttons {
-	width: 60%;
+	width: 75%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -79,3 +78,30 @@ button {
 	width: 70%;
 	border:none;
 }
+
+
+/*Tablet screens*/
+@media screen and (max-width: 1600px){
+	body{
+		/*background: cyan;*/
+	}
+
+	.main-container{
+		width: 90%;
+	}
+
+}
+
+
+/*Phone screens*/
+@media screen and (max-width: 600px){
+	body{
+		/*background: yellow;*/
+	}
+
+	.main-container{
+		width: 99%;
+	}
+
+}
+
