@@ -34,7 +34,7 @@ if ( isset($_POST['Num1']) && isset($_POST['Num2'])) {
     if(!empty($_POST['Num1']) $$ !empty($_POST['Num2'])){
         $theCalculation = new myCalculator($_POST["Num1"], $_POST["Num2"]), $_POST['operator'];
         $theCalculation->my_calculator();
-        $theCalculation->displayBill();
+        $theCalculation->displayResults();
     }
 }else{
     echo "Please fill in both the first number and the second number";

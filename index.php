@@ -1,3 +1,4 @@
+<?php include "/assets/classes/classes.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,12 +38,12 @@
             <input type="submit" name="operator" value="*">
             <input type="submit" name="operator" value="/">
         </div>
-
+        <label for="Result">
+             Result <?php echo $theCalculation->displayResults(); ?>
+        </label>
         
     </form>
-        <label for="Result">
-             Result<input type="number" name="Result" placeholder="Result to be displayed here" >
-        </label>
+
 </div>
 
 
