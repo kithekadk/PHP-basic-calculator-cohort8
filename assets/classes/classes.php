@@ -13,20 +13,20 @@ class myCalculator{
     }
 
     public function my_calculator() {
-        global $results;
-        if($operator=="+"){
-		    $results = $first_num+$second_num;
-        }elseif($operator=="-"){
-		    $results = $first_num-$second_num;
-        }elseif($operator=="*"){
-		    $results = $first_num*$second_num;
-        }elseif($operator=="/"){
-		    $results = $first_num/$second_num;
+        $results;
+        if($this->operator=="+"){
+		    $results = $this->first_num + $this->second_num;
+        }elseif($this->operator=="-"){
+		    $results = $this->first_num - $this->second_num;
+        }elseif($this->operator=="*"){
+		    $results = $this->first_num * $this->second_num;
+        }elseif($this->operator=="/"){
+		    $results = $this->first_num / $this->second_num;
         }
     }
 
     public function displayResults() {
-        return $results;
+        echo $results;
     }
 }
 

@@ -39,7 +39,7 @@
             <input type="submit" name="operator" value="/">
         </div>
         <label for="Result">
-             Result <?php echo $theCalculation->displayResults(); ?>
+             Result <?php echo $theCalculation->my_calculator(); ?>
         </label>
         
     </form>
