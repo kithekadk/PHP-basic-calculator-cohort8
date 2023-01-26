@@ -1,6 +1,9 @@
 <?php 
 $fail="";
-include "assets/classes/classes.php";
+
+if ($_SERVER ['REQUEST_METHOD'] == 'POST'){
+    include "assets/classes/classes.php";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
