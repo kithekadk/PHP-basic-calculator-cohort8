@@ -1,10 +1,11 @@
+<?php include "assets/classes/classes.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Simple-calculator</title>
 </head>
 
@@ -18,7 +19,7 @@
 <div class="main-container">
     <h1>SIMPLE CALCULATOR</h1>
 
-    <form action="/assets/classes/classes.php" method="POST">
+    <form action="index.php" method="POST">
         <label for="Num1">
         First number  
         <input type="number" name="Num1"  placeholder="Input your integer here">
@@ -36,10 +37,10 @@
             <input type="submit" name="operator" value="*">
             <input type="submit" name="operator" value="/">
         </div>
-
         <label for="Result">
-        Result<input type="number" name="Result" placeholder="Result to be displayed here" >
+             Result <?php echo $theCalculation->displayResults(); ?>
         </label>
+        
     </form>
 
 </div>
