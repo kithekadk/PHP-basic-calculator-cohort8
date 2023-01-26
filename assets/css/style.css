@@ -53,7 +53,7 @@ label {
 
 
 input[type='number'] {
-	color:white;
+	color:black;
 	background: rgb(39,39,39,0.1);
 	border-radius: 4px;
 	padding:14px;
@@ -96,11 +96,16 @@ button {
 /*Phone screens*/
 @media screen and (max-width: 600px){
 	body{
-		/*background: yellow;*/
+		background: white;
 	}
 
 	.main-container{
 		width: 99%;
+		margin:0 auto;
+		background:white;
+	}
+	label,.buttons {
+		width: 100%;
 	}
 
 }
