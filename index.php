@@ -26,7 +26,6 @@
 
         <label for="num2">
         Second number
-
         <input type="number" name="Num2"  placeholder="Input your integer here">
 
         </label>
