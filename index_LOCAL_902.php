@@ -41,12 +41,6 @@ if ($_SERVER ['REQUEST_METHOD'] == 'POST'){
             <input type="submit" name="operator" value="*">
             <input type="submit" name="operator" value="/">
         </div>
-<<<<<<< HEAD
-=======
-        <label for="Result">
-             Result <?php echo $theCalculation->my_calculator(); ?>
-        </label>
->>>>>>> origin/christine
         
         <h1 class="success">
              <?php echo $result; ?>

@@ -1,11 +1,4 @@
-<?php 
-$result="";
-
-if ($_SERVER ['REQUEST_METHOD'] == 'POST'){
-    include "assets/classes/classes.php";
-    $result='Result : '.$theCalculation->displayResults();
-}
-?>
+<?php include "assets/classes/classes.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +8,9 @@ if ($_SERVER ['REQUEST_METHOD'] == 'POST'){
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Simple-calculator</title>
 </head>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 
 <body>
 
@@ -26,12 +22,12 @@ if ($_SERVER ['REQUEST_METHOD'] == 'POST'){
     <form action="index.php" method="POST">
         <label for="Num1">
         First number  
-        <input type="number" name="Num1"  placeholder="Input your integer here" required >
+        <input type="number" name="Num1"  placeholder="Input your integer here">
         </label>
 
         <label for="num2">
         Second number
-        <input type="number" name="Num2"  placeholder="Input your integer here" required >
+        <input type="number" name="Num2"  placeholder="Input your integer here">
 
         </label>
 
@@ -41,16 +37,10 @@ if ($_SERVER ['REQUEST_METHOD'] == 'POST'){
             <input type="submit" name="operator" value="*">
             <input type="submit" name="operator" value="/">
         </div>
-<<<<<<< HEAD
-=======
         <label for="Result">
-             Result <?php echo $theCalculation->my_calculator(); ?>
+             Result <?php echo $theCalculation->displayResults(); ?>
         </label>
->>>>>>> origin/christine
         
-        <h1 class="success">
-             <?php echo $result; ?>
-        </h1>
     </form>
 
 </div>
